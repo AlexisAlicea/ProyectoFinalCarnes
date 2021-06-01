@@ -11,6 +11,7 @@ body{
     background-color: #340b0f;
 }
 .grid > *{
+    background-color: #90262e;
     box-shadow: -1px 1px 7px 0px black;
     border-radius: 4px;
     padding: 10px;
@@ -29,7 +30,6 @@ body{
 header{
     grid-area: header;
     height: 15vh;
-    background-color: #90262e;
 }
 header .logo{
     display: flex;
@@ -65,25 +65,37 @@ header .logo nav a{
     background-color: #90262e;
     background-color: #90262e;
     border: 2px solid #dedad8;
-    border-radius: 10%;
+    border-radius: 5%;
     color: #dedad8;
     max-width: 50%;
 }
 .buscado{
     height: 30vh;
     grid-area: buscado;
+    cursor:pointer
 }
+
 .mejor{
     height: 30vh;
     grid-area: mejor;
+    cursor:pointer
+}
+.ganado{
+    height: 30vh;
+    grid-area: ganado;
+    cursor:pointer
+}
+.ganado img, .buscado img , .mejor img{
+    width: 100%;
+    height: 100%;
 }
 footer{
     height: 10vh;
     grid-area: footer;
 }
-.ganado{
-    height: 30vh;
-    grid-area: ganado;
+footer a img{
+    height: 100%;
+    margin: 0px 20px;
 }
 
 @media (min-width: 600px) {
