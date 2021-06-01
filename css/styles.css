@@ -30,6 +30,7 @@ body{
 header{
     grid-area: header;
     height: 15vh;
+    
 }
 header .logo{
     display: flex;
@@ -49,8 +50,9 @@ header .logo nav a{
     border: 2px solid #dedad8;
     border-radius: 10%;
     color: #dedad8;
-
-
+}
+header .logo nav a:hover{
+    background-color: #340b0f;
 }
 .slider{
     height: 40vh;
@@ -87,7 +89,15 @@ header .logo nav a{
 }
 .ganado img, .buscado img , .mejor img{
     width: 100%;
-    height: 100%;
+    height: 85%;
+}
+.buscado h2, .mejor h2, .ganado h2{
+    color: #dedad8;
+}
+.buscado:hover div, .ganado:hover div, .mejor:hover div{
+    position: relative;
+    background-color: #340b0f;
+    border:1px solid #dedad8;
 }
 footer{
     height: 10vh;
@@ -98,6 +108,40 @@ footer a img{
     margin: 0px 20px;
 }
 
-@media (min-width: 600px) {
-        
+@media (max-width: 425px) {
+   header{
+       height: 50vh;
+   }
+   header .logo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   header nav{
+       display: flex;
+       flex-direction: column;
+       width:100%;
+
+   }
+   header nav a{
+       width: 90%;
+   }
+   .slider{
+       height: 47vh;
+   }
+   .slider .info{
+       max-width: 100%;
+   }
+    .grid{
+        display: grid;
+        gap: 10px;
+        grid-template-areas:  
+        "header"
+        "slider"
+        "buscado"
+        "mejor"
+        "ganado"
+        "footer"
+        ;
+    }   
 }
