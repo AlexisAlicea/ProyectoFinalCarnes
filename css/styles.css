@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+}
+.grid > *{
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:  
+    "header header"
+    "slider slider"
+    "buscado mejor"
+    "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+    height: 15vh;
+}
+.slider{
+    height: 40vh;
+    grid-area: slider;
+}
+.buscado{
+    height: 30vh;
+    grid-area: buscado;
+}
+.mejor{
+    height: 30vh;
+    grid-area: mejor;
+}
+footer{
+    height: 10vh;
+    grid-area: footer;
+}
+
+@media (min-width: 600px) {
+        
+}
